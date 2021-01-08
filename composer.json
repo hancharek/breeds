@@ -1,0 +1,32 @@
+{
+    "name": "qillianmartins/cat-breeds",
+    "description": "A HostGator Code Challenge",
+    "type": "project",
+    "autoload":{
+	"psr-4": {"App\\": "app/"}
+    },
+    "authors": [
+        {
+            "name": "Willian Martins",
+            "email": "hancharek@hotmail.com"
+        }
+    ],
+    "require": {
+        "slim/slim": "3.12",
+        "robmorgan/phinx": "^0.12.4",
+        "curl/curl": "^2.3",
+        "vlucas/phpdotenv": "^5.2",
+        "illuminate/database": "^8.21",
+        "monolog/monolog": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5",
+        "phpunit/php-invoker": "^3.1",
+        "evert/phpdoc-md": "^0.2.0"
+    },
+    "scripts": {
+    	"test": "vendor/bin/phpunit",
+        "migrate": "vendor/bin/phinx migrate",
+        "serve": "php -S localhost:8080 -t public"
+    }
+}
