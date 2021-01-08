@@ -3,10 +3,6 @@
 /** @var Pimple\Container $container */
 $container = $app->getContainer();
 
-// Error Handler
-//$container['errorHandler'] = function ($c) {
-//	return new \Conduit\Exceptions\ErrorHandler($c['settings']['displayErrorDetails']);
-//};
 // Eloquent Service Providers
 $container->register(new \App\Services\DatabaseServices\EloquentServiceProvider());
 
