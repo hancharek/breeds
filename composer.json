@@ -12,7 +12,7 @@
         }
     ],
     "require": {
-        "slim/slim": "3.12",
+        "slim/slim": "^4.7",
         "robmorgan/phinx": "^0.12.4",
         "curl/curl": "^2.3",
         "vlucas/phpdotenv": "^5.2",
